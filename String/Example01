@@ -1,0 +1,20 @@
+//Make a program that then reads a string and prints it
+
+#include <stdio.h>
+
+int main() {
+    char string[100];
+    printf("Enter any sentence: ");
+
+    // Ways to read a string
+    
+    // scanf("%s", string); // - Does not read spaces, cannot input a sentence.
+    scanf("%99[^\n]s", string); // - Function that reads spaces. Syntax: scanf ("% <size - 1> [^\n]  s", <str>)
+    fflush(stdin); // It's always good to call this function after scanf or any function that takes input from the keyboard.
+    // gets(string); - Allows reading more characters than the size of the string.
+    // fgets(string, 100, stdin); fgets (<string>, <size>, stdin) = the last character is always reserved for \0
+
+    printf("%s", string);
+
+    return 0;
+}
