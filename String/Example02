@@ -1,0 +1,30 @@
+//Crie um programa que calcula o comprimento de uma string (nao use a funcão strlen).
+
+#include <stdio.h>
+
+int length (char str []){
+    
+    int counter = 0; // Contador para armazenar a tamanho da string
+    while (str [counter] != '\0') // Vai pecorrer a string até encontrar o \0 (que finaliza a string)
+    {
+        counter++; // vai encrementando +1 a cada loop
+    }
+     return counter; // essa função vai retornar um valor inteiro, e a quantidade de vezes que foi encrementado.
+    
+}
+
+int main (void){ 
+
+    char phrase[100]; // String de no máximo 99 caracteres a ser digitado.
+    
+    printf("type yours phrase: "); // Solicitando a frase
+    scanf("%99[^\n]s", phrase); // Lendo a frase com o scanf "Aprimorado" (Que consegue Ler espaços).
+
+    int length2 = length(phrase); // Chamada da função, length2 vai receber um inteiro, que é o comprimento da string.
+
+    printf("The length of your string is: %d", length2); // Imprimindo o comprimento da string
+    
+    return 0;
+
+
+}
