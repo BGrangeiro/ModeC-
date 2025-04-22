@@ -9,7 +9,7 @@ int main (void){
     printf("type your name: "); // Solicita o nome a ser digitado
     scanf("%49[^\n]s", str); // Lê o nome com o scanf "Aprimorado" (Que lê espaços)
 
-    if (str[0] == 'a' || str[0] == 'A'){ // Verifica se str[0] (Primeira letra) é a letra "a" ou "A"
+    if (str[0] == 'a' || str[0] == 'A'){ // Verifica se str[0] (Primeira letra) é a letra "a" ou "A" // str
 
         printf("%s <3", str); // Imprime se a condição for verdadeira
     
